@@ -1,0 +1,13 @@
+.com{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: scroll;
+}
+.img-block{
+    min-width: 300px;
+    max-width: 300px;
+}
+img{
+    width: 100%;
+}
