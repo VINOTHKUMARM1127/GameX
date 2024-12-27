@@ -1,13 +1,10 @@
-.com{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    overflow-x: scroll;
+div{
+    color: white;
 }
-.img-block{
-    min-width: 300px;
-    max-width: 300px;
-}
+
 img{
-    width: 100%;
+    min-width: 200px;
+    width: 200px;
+    height: 300px;
+    object-fit: cover; 
 }
