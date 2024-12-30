@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div>
       <div className="nav">
-        <div className="tit">GAMEX</div>
+        <div className="tit">LOTGAMES</div>
         <div className='det'>
           <li>HOME</li>
           <li>CREATORS</li>
