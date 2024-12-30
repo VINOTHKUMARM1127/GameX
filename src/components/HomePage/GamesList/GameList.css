@@ -3,7 +3,7 @@
 }
 
 section {
-    width: 85%;
+    width: 90%;
     margin: 0px auto;
 }
 
@@ -14,13 +14,9 @@ section {
 }
 
 .card-sec {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    overflow-x: scroll;
-}
-
-::-webkit-scrollbar {
-    display: none;
 }
 
 .card {
