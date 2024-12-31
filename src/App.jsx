@@ -1,21 +1,15 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+import Footer from "./Components/Footer"
+import Header from "./Components/Header"
+import Home from "./Pages/Home"
 
-import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
-import DetailsPage from './components/DetailsPage/DetailsPage'
-import HomePage from './components/HomePage/HomePage'
+function App() {
 
-const App = () => {
   return (
-    <>
-      <Header />
-      <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/games/:id' element={<DetailsPage />} />
-      </Routes>
-      <Footer />
-    </>
+    <div className=" bg-slate-600">
+    <Header />
+    <Home />
+    <Footer />
+    </div>
   )
 }
 
