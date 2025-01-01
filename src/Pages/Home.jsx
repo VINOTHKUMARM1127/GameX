@@ -22,6 +22,9 @@ const Home = () => {
             </div>
             <div className='col-span-4 md:col-span-3'>
                 <Banner datas={datas} />
+                <div className='block md:hidden'>
+                <GenereList SetGenreId={setGenreId} />
+            </div>
                 <Trending datas={datas} />
                 <GamesGenre genreId={genreId}/>
             </div>

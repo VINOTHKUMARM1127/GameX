@@ -11,28 +11,29 @@ const GenereList = ({ SetGenreId }) => {
     }
 
     return (
-        <div>
+        <>
             <div className="text-white text-[30px] font-bold">Genre</div>
-            {genreList.map((item, key) => (
-                <div
-                    key={key}
-                    onClick={() => {
-                        setIndex(key);
-                        SetGenreId(item.id);
-                    }}
-                    className={`rounded-lg p-2 text-white flex gap-2 items-center group mb-2 cursor-pointer hover:bg-gray-400 ${
-                        index === key ? 'bg-gray-700' : ''
-                    }`}
-                >
-                    <img
-                        src={item.image_background}
-                        className='w-[40px] h-[40px] object-cover rounded-lg group-hover:scale-105 transition-all ease-out duration-300'
-                        alt={item.name}
-                    />
-                    <div className="text-[1rem] group-hover:font-bold">{item.name}</div>
-                </div>
-            ))}
-        </div>
+            <div className='w-[100%] flex overflow-x-scroll md:flex-col md:w-[90%]'>
+                {genreList.map((item, key) => (
+                    <div
+                        key={key}
+                        onClick={() => {
+                            setIndex(key);
+                            SetGenreId(item.id);
+                        }}
+                        className={`rounded-lg p-2 text-white flex items-center group mb-2 cursor-pointer hover:bg-gray-400 ${index === key ? 'bg-gray-700' : ''
+                            }`}>
+                    <div>
+                        <img
+                            src={item.image_background}
+                            className='w-[40px] h-[40px] object-cover rounded-lg group-hover:scale-105 transition-all ease-out duration-300'
+                            alt={item.name}/>
+                        </div>
+                        <div className="text-[1rem] group-hover:font-bold">{item.name}</div>
+                    </div>
+                ))}
+            </div>
+        </>
     );
 };
 
