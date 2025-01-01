@@ -13,7 +13,7 @@ const Banner = ({ datas }) => {
                         {item.name}</div>
                     <img src={item.background_image}
                         alt={item.name}
-                        className=' md:h-[350px] w-full object-cover rounded-2xl' />
+                        className='min-h-[220px] md:h-[350px] w-full object-cover rounded-2xl' />
                 </div>
             ))}
         </div>
