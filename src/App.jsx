@@ -1,4 +1,4 @@
-import { useState } from "react"
+
 import Footer from "./Components/Footer"
 import Header from "./Components/Header"
 import Home from "./Pages/Home"
@@ -15,7 +15,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/:id" element={<DetailsPage />} />
+          <Route path="/games/:id" element={<DetailsPage />} />
         </Routes>
         <Footer />
       </div>
