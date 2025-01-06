@@ -8,7 +8,7 @@ const Banner = ({ datas }) => {
         <div>
             {datas.slice(final - 1, final).map((item, index) => (
                 <div key={index} className='relative'>
-                    <div className='text-white font-bold text-[1.5em] absolute bottom-0 p-5
+                    <div className=' font-bold text-[1.5em] absolute bottom-0 p-5
                         bg-gradient-to-t from-slate-900 to-transparent w-full rounded-2xl'>
                         {item.name}</div>
                     <img src={item.background_image}

@@ -12,7 +12,7 @@ const GenereList = ({ SetGenreId }) => {
 
     return (
         <>
-            <div className="text-white text-[30px] font-bold">Genre</div>
+            <div className=" text-[30px] font-bold">Genre</div>
             <div className='w-[100%] flex overflow-x-scroll md:flex-col md:w-[90%]'>
                 {genreList.map((item, key) => (
                     <div
@@ -21,7 +21,7 @@ const GenereList = ({ SetGenreId }) => {
                             setIndex(key);
                             SetGenreId(item.id);
                         }}
-                        className={`rounded-lg p-2 pr-12 text-white flex items-center group md:mb-2 cursor-pointer hover:bg-gray-400 ${index === key ? 'bg-gray-700' : ''
+                        className={`rounded-lg p-2 pr-12  flex items-center group md:mb-2 cursor-pointer hover:bg-[#4091c9] ${index === key ? 'bg-[#1368aa]' : ''
                             }`}
                     >
                         <img

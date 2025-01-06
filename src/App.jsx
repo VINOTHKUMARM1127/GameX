@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
 
-      <div className=" bg-slate-600 min-h-[100vh]">
+      <div className=" bg-[#082751] min-h-[100vh]">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

@@ -12,11 +12,11 @@ const GamesGenre = ({ genreId }) => {
     }
     return (
         <div className='mt-5'>
-            <div className='text-white text-[30px] font-bold'>Popular Games</div>
+            <div className=' text-[30px] font-bold'>Popular Games</div>
             <div className='grid grid-cols-2 lg:grid-cols-3 gap-6 mt-3'>
                 {dat.map((curitem, index) => (
                     <div 
-                    className='bg-slate-800 rounded-xl text-white pb-1 text-center
+                    className='bg-[#1368aa] rounded-xl  pb-1 text-center
                     group hover:scale-105 transtion-all duration-300 ease-in-out'
                     onClick={() => navigate(`/games/${curitem.id}`)}>
                         <img src={curitem.background_image} alt={curitem.name}
