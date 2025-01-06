@@ -26,7 +26,7 @@ const DetailsPage = () => {
   return (
     <>
       <div className='text-white flex flex-col md:flex-row md:mt-[4em] w-[90%] mx-[auto] my-[2em]'>
-        <img className='w-[90%] md:max-w-[320px] md:h-[450px] object-cover mx-auto my-0em md:mx-[0em] rounded-xl '
+        <img className='w-[90%]  md:max-w-[320px] h-[400px] object-cover mx-auto my-0em md:mx-[0em] rounded-xl '
           src={data.background_image} alt={data.name} />
 
         <div className='md:ml-[3em]'>
