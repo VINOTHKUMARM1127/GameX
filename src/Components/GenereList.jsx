@@ -21,7 +21,7 @@ const GenereList = ({ SetGenreId }) => {
                             setIndex(key);
                             SetGenreId(item.id);
                         }}
-                        className={`rounded-lg p-2 pr-12  flex items-center group md:mb-2 cursor-pointer hover:bg-[#4091c9] ${index === key ? 'bg-[#09152b]' : ''
+                        className={`rounded-lg p-2 pr-12  flex items-center group md:mb-2 cursor-pointer hover:bg-[#4091c9] ${index === key ? 'bg-[#063977]' : ''
                             }`}
                     >
                         <img

@@ -16,13 +16,13 @@ const GamesGenre = ({ genreId }) => {
             <div className='grid grid-cols-2 lg:grid-cols-3 gap-6 mt-3'>
                 {dat.map((curitem, index) => (
                     <div 
-                    className='bg-[#09152b] rounded-xl  pb-1 text-center
+                    className='bg-[#063977] rounded-xl  pb-1 text-center
                     group hover:scale-105 transtion-all duration-300 ease-in-out'
                     onClick={() => navigate(`/games/${curitem.id}`)}>
                         <img src={curitem.background_image} alt={curitem.name}
                             className='w-full h-[200px] md:h-[180px] rounded-tl-xl rounded-tr-xl object-cover ' />
-                        <div className='font-bold'>{curitem.name}</div>
-                        <div>⭐{curitem.rating * 2}</div>
+                        <div className='font-bold my-[5px]'>{curitem.name}</div>
+                        <div className='mb-2'>⭐{curitem.rating * 2}</div>
                     </div>
                 ))}
             </div>
