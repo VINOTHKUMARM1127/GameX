@@ -14,7 +14,7 @@ const Trending = ({ datas }) => {
         group hover:scale-110 transtion-all duration-300 ease-in-out'>
             <img src={cur.background_image} alt={cur.name} className='rounded-tl-xl rounded-tr-xl
             object-cover h-[270px]'/>
-            <div className='  text-[1em] text-center pt-1 px-5 pb-3 '>
+            <div className='  text-[1em] text-center pt-3 px-5 pb-3 '>
               {cur.name}
             </div>
           </div>

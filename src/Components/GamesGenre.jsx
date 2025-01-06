@@ -21,7 +21,7 @@ const GamesGenre = ({ genreId }) => {
                     onClick={() => navigate(`/games/${curitem.id}`)}>
                         <img src={curitem.background_image} alt={curitem.name}
                             className='w-full h-[200px] md:h-[180px] rounded-tl-xl rounded-tr-xl object-cover ' />
-                        <div className='font-bold my-[5px]'>{curitem.name}</div>
+                        <div className='font-bold my-[6px]'>{curitem.name}</div>
                         <div className='mb-2'>⭐{curitem.rating * 2}</div>
                     </div>
                 ))}
