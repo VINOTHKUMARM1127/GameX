@@ -12,8 +12,8 @@ const GenereList = ({ SetGenreId }) => {
              flex items-center group md:mb-2 cursor-pointer ml-[1px]'>
                 <div className='bg-[#063977] animate-pulse w-[40px] h-[40px] 
                 object-cover rounded-lg '></div>
-                <div className='bg-[#063977] animate-pulse md:w-[100px] text-center 
-            ml-[2px] pt-2 px-8 pb-2 rounded-md'></div>
+                {/* <div className='bg-[#063977] animate-pulse md:w-[200px] text-center 
+            ml-[2px] pt-2 px-8 pb-2 rounded-md'></div> */}
             </div>
         )
     }
