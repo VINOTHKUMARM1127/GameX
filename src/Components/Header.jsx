@@ -33,8 +33,8 @@ const Header = () => {
 
       <div
         className={`text-center z-40 md:hidden 
-        ${menuOpen ? 'block' : 'hidden'} text-[.9em]
-        fixed top-0 right-0 w-[60vw] h-screen bg-[#09152b] pt-[6em] p-4 rounded-lg`}>
+        ${menuOpen ? 'block' : 'hidden'} text-[1em]
+        fixed top-0 right-0 w-[80vw] h-screen bg-[#09152b] pt-[6em] p-4 rounded-lg`}>
         <IoMdClose className='w-6 h-6 top-3 absolute' 
         onClick={() => {setMenuOpen(false)}}/>
         <div onClick={() => {navigate('/'); setMenuOpen(false)}}

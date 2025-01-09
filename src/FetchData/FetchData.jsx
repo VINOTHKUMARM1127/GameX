@@ -12,7 +12,7 @@ const FetchData = ({ url, id }) => {
     const fetchDataFromApi = async () => {
       try {
         setLoading(true);
-        const apiUrl = id ? `${baseUrl}${url}?key=${key}&genres=${id}` : `${baseUrl}${url}?key=${key}`;
+        const apiUrl = id ? `${baseUrl}${url}?key=${key}${id}` : `${baseUrl}${url}?key=${key}`;
         const response = await axios.get(apiUrl);
         setData(response.data);
       } catch (err) {

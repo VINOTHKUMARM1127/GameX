@@ -3,7 +3,7 @@ import FetchData from '../FetchData/FetchData'
 import { useNavigate } from "react-router-dom";
 
 const GamesGenre = ({ genreId }) => {
-    const { data, loading } = FetchData({ url: '/games', id: genreId })
+    const { data, loading } = FetchData({ url: '/games', id: `&genres=${genreId}` })
     const dat = data?.results
     const navigate = useNavigate();
 
