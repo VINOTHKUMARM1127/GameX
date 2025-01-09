@@ -11,11 +11,11 @@ const Creator = () => {
     return (
       <div className='pb-1 text-center'>
         <div className='bg-[#09152b] animate-pulse w-full h-[200px] md:h-[180px] 
-            rounded-tl-xl rounded-tr-xl object-cover mb-1'></div>
+            rounded-tl-xl rounded-xl object-cover mb-1'></div>
         <div className='bg-[#09152b] animate-pulse  text-[1em] text-center 
-            pt-3 px-5 pb-3 mb-1'></div>
+            pt-3 px-5 pb-3 mb-1 rounded-xl'></div>
         <div className='bg-[#09152b] animate-pulse  text-[1em] text-center 
-            pt-3 px-5 pb-3 rounded-bl-xl rounded-br-xl mb-1'></div>
+            pt-3 px-5 pb-3 rounded-bl-xl rounded-xl mb-1'></div>
       </div>
     )
   }
