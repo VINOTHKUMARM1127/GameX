@@ -34,7 +34,7 @@ const GamesGenre = ({ genreId }) => {
             </div>
         ) :(
         <div className='mt-5'>
-            <div className='grid grid-cols-2 lg:grid-cols-3 gap-6 mt-3'>
+            <div className='grid grid-cols-2 lg:grid-cols-3 gap-6 my-3'>
                 {dat.map((curitem, index) => (
                     <div key={index}
                     className='bg-[#063977] rounded-xl  pb-1 text-center

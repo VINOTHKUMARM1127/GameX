@@ -1,4 +1,3 @@
-
 import Footer from "./Components/Footer"
 import Header from "./Components/Header"
 import Home from "./Pages/Home"
@@ -9,13 +8,13 @@ import Creator from "./Pages/Creator"
 import Aboutus from "./Pages/Aboutus"
 import NotFoundPage from "./Pages/NotFoundPage"
 import CreatorDetails from "./Pages/CreatorDetails"
+import ScrollTop from "./Components/ScrollTop"
 
 function App() {
-  
 
   return (
     <Router>
-
+      <ScrollTop />
       <div className=" bg-[#082751] min-h-[100vh]">
         <Header />
         <Routes>

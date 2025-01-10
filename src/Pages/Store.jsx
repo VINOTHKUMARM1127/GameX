@@ -4,7 +4,6 @@ import FetchData from '../FetchData/FetchData'
 const Store = () => {
     const { data, loading } = FetchData({ url: '/stores', id: null })
     const st = data?.results
-    console.log(st)
 
     const text = () =>{
         return(
@@ -51,7 +50,8 @@ const Store = () => {
                             <img className='w-full h-[200px] md:h-[180px] rounded-tl-xl 
                             rounded-tr-xl object-cover '
                                 src={items.image_background} alt={items.name} />
-                            <div className='font-bold my-[6px]'>{items.name}</div>
+                            <div className='font-bold my-[6px] text-[1.1em]'>{items.name}</div>
+                            <div className='font-bold'>Games:</div>
                             <div className='mb-2'>{items.games.map((dat) => (
                                 <div>{dat.name}</div>
                             ))}</div>

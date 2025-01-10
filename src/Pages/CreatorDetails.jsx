@@ -6,7 +6,6 @@ import Creator from './Creator';
 const CreatorDetails = () => {
     const { id } = useParams();
     const { data, loading } = FetchData({ url: `/creators/${id}`, id: null })
-    console.log(data)
 
     const skitem = (it) => {
         return (

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import FetchData from '../FetchData/FetchData'
 import { useNavigate } from 'react-router-dom'
+import ScrollTop from '../Components/ScrollTop'
 
 const Creator = () => {
   const navigate = useNavigate()
@@ -64,7 +65,7 @@ const Creator = () => {
         </div>
       )}
       <div className='flex justify-center mt-5'>
-        <div className='bg-[#063977] rounded-xl px-4 py-2 mr-5' onClick={handlePrev}>Prev</div>
+        <div className='bg-[#063977] rounded-xl px-4 py-2 mr-5' onClick={()=>{handlePrev; <ScrollTop />}}>Prev</div>
         <div className='text-[1em] my-auto mx-0'>Page:{page}</div>
         <div className='bg-[#063977] rounded-xl px-4 py-2 ml-5' onClick={handleNext}>Next</div>
       </div>
