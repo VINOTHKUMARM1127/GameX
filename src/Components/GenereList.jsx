@@ -5,6 +5,7 @@ const GenereList = ({ SetGenreId }) => {
     const [index, setIndex] = useState(0);
     const { data, loading } = FetchData({ url: '/genres', id: null });
     const genreList = data?.results;
+    console.log('gen',genreList)
 
     const Ske = () => {
         return (
@@ -12,7 +13,8 @@ const GenereList = ({ SetGenreId }) => {
              flex items-center group md:mb-2 cursor-pointer ml-[1px]'>
                 <div className='bg-[#063977] animate-pulse w-[40px] h-[40px] 
                 object-cover rounded-lg '></div>
-                <div className='bg-[#09152b] animate-pulse rounded-md'></div>
+                <div className='bg-[#09152b] animate-pulse w-[20px]
+                text-center ml-[2px] pt-2 px-8 pb-2 rounded-md'></div>
             </div>
         )
     }
