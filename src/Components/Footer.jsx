@@ -6,7 +6,7 @@ import { SocialIcon } from 'react-social-icons'
 const Footer = () => {
   const navigate = useNavigate()
   return (
-    <div className='bg-[#09152b] py-[2em] px-[1em] text-center '>
+    <div className='bg-[var(--primary-color)] py-[2em] px-[1em] text-center '>
       <div className='my-auto mx-0'>
         <div className='flex justify-center  text-blue-400 mb-[1em]'>
           <IoGameController className='mx-0px my-auto w-8 h-8 md:w-10' />

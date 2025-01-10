@@ -40,7 +40,7 @@ const CreatorDetails = () => {
                     </div>
                 </div>
             ) : (
-                <div className='text-white md:mt-[4em] w-[90%] mx-[auto] my-[2em]'>
+                <div className='md:mt-[4em] w-[90%] mx-[auto] my-[2em]'>
                     <div className=' flex flex-col md:flex-row '>
                         <img className='w-[90%]  md:max-w-[320px] h-[400px] object-cover mx-auto my-0em md:mx-[0em] rounded-xl '
                             src={data.image} alt={data.name} />
@@ -51,7 +51,7 @@ const CreatorDetails = () => {
                             <div>
                                 <div className='font-bold text-[1.3em] mb-[0.2em]'>Description</div>
                                 <div className=" text-[1em] text-justify">
-                                <div dangerouslySetInnerHTML={{ __html: data.description }} />
+                                <div className='opacity-80' dangerouslySetInnerHTML={{ __html: data.description }} />
                                 </div>
                             </div>
 

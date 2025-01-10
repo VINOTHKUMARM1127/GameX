@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <ScrollTop />
-      <div className=" bg-[#082751] min-h-[100vh]">
+      <div className=" bg-[var(--sbg-color)] min-h-[100vh]">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

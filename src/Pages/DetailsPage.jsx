@@ -54,7 +54,7 @@ const DetailsPage = () => {
       </div>
   </div>
     ) : (
-      <div className='text-white md:mt-[4em] w-[90%] mx-[auto] my-[2em]'>
+      <div className='md:mt-[4em] w-[90%] mx-[auto] my-[2em]'>
         <div className=' flex flex-col md:flex-row '>
           <img className='w-[90%]  md:max-w-[320px] h-[400px] object-cover mx-auto my-0em md:mx-[0em] rounded-xl '
             src={data.background_image} alt={data.name} />

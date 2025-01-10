@@ -50,15 +50,13 @@ const Creator = () => {
           <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 mt-3'>
             {dta.map((curitem, index) => (
               <div key={index}
-                className='bg-[#063977] rounded-xl  pb-1 text-center
+                className='bg-[var(--bg-color)] rounded-xl  pb-1 text-center
                     group hover:scale-105 transtion-all duration-300 ease-in-out'
                 onClick={() => navigate(`/creators/${curitem.id}`)}>
                 <img src={curitem.image} alt={curitem.name}
                   className='w-full h-[200px] md:h-[180px] rounded-tl-xl rounded-tr-xl object-cover ' />
-                <div className='font-bold my-[6px]'>{curitem.name}</div>
-                <div className='uppercase text-[0.8em] mb-2'>{curitem?.positions.map((it) => (
-                  <div>{it.name}</div>
-                ))}</div>
+                <div className='font-bold text-[1.1em] mt-[5px]'>{curitem.name}</div>
+                <div className='capitalize text-[0.9em] opacity-80 mb-2'>{curitem?.positions[0].name}</div>
               </div>
             ))}
           </div>

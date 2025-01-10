@@ -36,7 +36,7 @@ const Trending = () => {
           <div className='hidden md:grid md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4'>
             {datas.map((cur, index) => index < 4 && (
               <div onClick={() => navigate(`/games/${cur.id}`)}
-                key={index} className=' bg-[#063977]  rounded-xl
+                key={index} className=' bg-[var(--bg-color)]  rounded-xl
         group hover:scale-110 transtion-all duration-300 ease-in-out'>
                 <img src={cur.background_image} alt={cur.name} className='rounded-tl-xl rounded-tr-xl
             object-cover h-[270px] w-[220px]'/>

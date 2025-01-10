@@ -45,15 +45,16 @@ const Store = () => {
                 <div className='grid grid-cols-2 lg:grid-cols-3 gap-6 '>
                     {st.map((items, key) => (
                         <div key={key}
-                            className='bg-[#063977] rounded-xl  pb-1 text-center
+                            className='bg-[var(--bg-color)] rounded-xl  pb-1 text-center
                     group hover:scale-105 transtion-all duration-300 ease-in-out'>
                             <img className='w-full h-[200px] md:h-[180px] rounded-tl-xl 
                             rounded-tr-xl object-cover '
                                 src={items.image_background} alt={items.name} />
                             <div className='font-bold my-[6px] text-[1.1em]'>{items.name}</div>
-                            <div className='font-bold'>Games:</div>
-                            <div className='mb-2'>{items.games.map((dat) => (
-                                <div>{dat.name}</div>
+                            <div className='font-bold text-[1em] mb-1'>Games:</div>
+                            <div className='mb-2 flex flex-wrap justify-center px-[1em]'>
+                                {items.games.map((dat) => (
+                                <div className='text-[0.9em]'>{dat.name}</div>
                             ))}</div>
                         </div>
                     ))}

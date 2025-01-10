@@ -6,6 +6,11 @@ div::-webkit-scrollbar{
     display: none;
 }
 :root {
-    color:white;
     font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    color:rgb(255, 255, 255);
+    --primary-color:#09152b ;
+    --bg-color:#063977 ;
+    --sbg-color:#082751 ;
   }
+
+
