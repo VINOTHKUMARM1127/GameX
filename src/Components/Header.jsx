@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <div className={`flex p-[1em] bg-[#09152b] justify-between sticky h-[70px] top-0 z-40 
-    transition-all ${showHeader ? '' : '-top-[70px]'}`}>
+    transition-all ${showHeader ? '' : 'top-[-70px]'}`}>
       <div className='flex'>
         <IoGameController className='text-orange-500 mx-0px my-auto w-6 h-6 md:w-10 md:h-10' />
         <div onClick={() => navigate('/')}
