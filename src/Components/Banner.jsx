@@ -1,8 +1,9 @@
 import React from 'react'
 import FetchData from '../FetchData/FetchData';
+import { useNavigate } from 'react-router-dom';
 
 const Banner = () => {
-
+    const navigate = useNavigate()
     const { data, loading } = FetchData({ url: '/games', id: null });
     const datas = data?.results;
 
@@ -17,7 +18,8 @@ const Banner = () => {
                 ) : (
                     <div>
                         {datas.slice(final - 1, final).map((item, index) => (
-                            <div key={index} className='relative'>
+                            <div key={index} className='relative'
+                            onClick={()=>{navigate(`/games/${item.id}`)}} >
                                 <div className=' font-bold text-[1.5em] absolute bottom-0 p-5
                         bg-gradient-to-t from-slate-900 to-transparent w-full rounded-2xl'>
                                     {item.name}</div>

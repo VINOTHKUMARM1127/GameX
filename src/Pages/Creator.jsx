@@ -7,7 +7,6 @@ const Creator = () => {
   const [page, setPage] = useState(1)
   const { data, loading } = FetchData({ url: '/creators', id: `&page=${page}` })
   const dta = data?.results
-  console.log(page)
 
   const sk = () => {
     return (
