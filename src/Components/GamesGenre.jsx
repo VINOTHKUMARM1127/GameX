@@ -20,7 +20,7 @@ const GamesGenre = ({ genreId }) => {
         )
     }    
     return (
-        <><div className=' text-[30px] font-bold'>Popular Games</div>
+        <><div className='mt-4 text-[30px] font-bold'>Popular Games</div>
         {loading ? (
             <div className='grid grid-cols-2 lg:grid-cols-3 gap-6 mt-3'>
                 {sk()}

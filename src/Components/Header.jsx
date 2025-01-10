@@ -9,7 +9,7 @@ const Header = () => {
   const navigate = useNavigate();
 
   return (
-    <div className='flex p-[1em] bg-[#09152b] justify-between'>
+    <div className='flex p-[1em] bg-[#09152b] justify-between sticky top-0 z-40'>
       <div className='flex'>
         <IoGameController className='text-orange-500 mx-0px my-auto w-6 h-6 md:w-10 md:h-10' />
         <div onClick={() => navigate('/')}

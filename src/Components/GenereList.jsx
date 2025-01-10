@@ -22,7 +22,7 @@ const GenereList = ({ SetGenreId }) => {
         <>
             <div className=" text-[30px] font-bold">Genre</div>
             {loading ? (
-                <div className='w-[100%] flex overflow-x-scroll md:flex-col md:w-[90%]'>
+                <div className='w-[100%] flex overflow-x-scroll md:flex-col md:w-[90%] z-5'>
                     {Ske()}
                     {Ske()}
                     {Ske()}
