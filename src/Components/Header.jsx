@@ -12,7 +12,8 @@ const Header = () => {
     <div className='flex p-[1em] bg-[#09152b] justify-between'>
       <div className='flex'>
         <IoGameController className='text-orange-500 mx-0px my-auto w-6 h-6 md:w-10 md:h-10' />
-        <div className='text-xl font-bold mx-0px my-auto ml-[6px]'>LOT
+        <div onClick={() => navigate('/')}
+        className='text-xl font-bold mx-0px my-auto ml-[6px]'>LOT
           <span className='bg-orange-500 ml-[6px] p-1 rounded-xl'>GAMES</span>
           </div>
       </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import FetchData from '../FetchData/FetchData';
-import GamesGenre from './GamesGenre';
+import GamesGenre from '../Components/GamesGenre';
 
 const DetailsPage = () => {
   const { id } = useParams();
@@ -22,6 +22,9 @@ const DetailsPage = () => {
     const options = { year: "numeric", month: "short", day: "numeric" };
     return new Date(dateString).toLocaleDateString("en-US", options);
   };
+
+  const num = [4,51,3,5,10,2,40,14,7,11,83,59,1,15,6,19,28,34,17];
+  const ran = Math.floor(Math.random()*18)
 
   return (
     <div className='text-white md:mt-[4em] w-[90%] mx-[auto] my-[2em]'>
@@ -77,7 +80,7 @@ const DetailsPage = () => {
         </div>
         
       </div>
-      <GamesGenre />
+      <GamesGenre genreId={num[ran]}/>
     </div>
   )
 }

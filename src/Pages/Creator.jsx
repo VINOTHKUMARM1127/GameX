@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import FetchData from '../FetchData/FetchData'
+import { useNavigate } from 'react-router-dom'
 
 const Creator = () => {
+  const navigate = useNavigate()
   const [page, setPage] = useState(1)
   const { data, loading } = FetchData({ url: '/creators', id: `&page=${page}` })
   const dta = data?.results
@@ -31,7 +33,7 @@ const Creator = () => {
 
   return (
     <div className='px-5 my-4'>
-      <div className=' text-[30px] font-bold'>Popular Games</div>
+      <div className=' text-[30px] font-bold text-center'>Creators</div>
       {loading ? (
         <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 mt-3'>
           {sk()}
@@ -50,7 +52,7 @@ const Creator = () => {
               <div key={index}
                 className='bg-[#063977] rounded-xl  pb-1 text-center
                     group hover:scale-105 transtion-all duration-300 ease-in-out'
-                onClick={() => navigate(`/games/${curitem.id}`)}>
+                onClick={() => navigate(`/creators/${curitem.id}`)}>
                 <img src={curitem.image} alt={curitem.name}
                   className='w-full h-[200px] md:h-[180px] rounded-tl-xl rounded-tr-xl object-cover ' />
                 <div className='font-bold my-[6px]'>{curitem.name}</div>
